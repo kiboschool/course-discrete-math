@@ -1,0 +1,782 @@
+# Visit https://docs.google.com/document/d/1Hm41CGu0pZrGB7_XrPZR50DU7DXvqeC6aZuaTLpRLlo/edit 
+# for full details about the contents of the course.yml file. 
+# 
+# - Top level details of the course: 
+#     name: course name
+#     code: course code
+#     term: when is this offered
+#     about_path: the path to the course overview md file
+#     image_path: the path to an image to use as the course header
+#
+# - Units
+#     name: name of the unit (e.g. Week 1: Introduction)
+#     activities: list of the activities in the Unit
+# 
+# - Activities
+#     name: name of the activity
+#     path: where to find the file for the activity
+#     workload: how many minutes the activity is estimated to take
+#     type: `lesson` or `assignment`
+#     kind: airlock resource kind: 
+#       `GENERAL`, `MEETING`, `PUBLICATION`, `PUBLICATION_REVIEWED`, 
+#       `ASSIGNMENT`, `ASSIGNMENT_SUMMATIVE`
+#     publish: Is this ready, or still a draft? Publish can be set to:
+#       - `true` (publish to students now)
+#       - `false` (do not publish to students), default value if not specified
+#       - date, formatted like `2023-10-25` (publish to students on that date) 
+#     due: When is the due date for the activity (e.g. 2023-12-27)
+#     grade_weight: what percent of the course grade is this 
+#       (for now, only for assignments).  Must sum to 100.
+
+name: Discrete Math
+code: CSA001
+term: Jan-2024
+about_path: src/front-matter/course-overview.md
+image_path: images/puzzle.png
+units:
+  - name: Course Overview
+    activities:
+      - name: Introduction
+        path: src/front-matter/course-overview.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: true
+      - name: Live Classes
+        path: src/front-matter/live-classes.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: true
+      - name: Assessments
+        path: src/front-matter/assessments.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: true
+      - name: Getting Help
+        path: src/front-matter/getting-help.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: true
+      - name: Giving Help
+        path: src/front-matter/giving-help.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: true
+      - name: Academic Integrity
+        path: src/front-matter/academic-integrity.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: true
+      - name: Course Tools
+        path: src/front-matter/course-tools.md
+        type: lesson
+        kind: GENERAL
+        workload: 15
+        publish: true
+  - name: 'Module 1: Review of MT & Intro to LaTeX'
+    activities:
+      - name: 'Module 1: Introduction'
+        path: src/lessons/module-01.md
+        type: lesson
+        kind: PUBLICATION_REVIEWED
+        workload: 15
+        publish: 2024-01-08
+      - name: 'Review: Logical Operators and Truth Tables'
+        path: src/lessons/module-01/reviewlogic.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: 'Review: Implication'
+        path: src/lessons/module-01/reviewlogic1.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: 'Review: Logic Laws'
+        path: src/lessons/module-01/reviewlogic2.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: 'Review: Logical Statements'
+        path: src/lessons/module-01/reviewlogic3.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: 'Review: Set Definition'
+        path: src/lessons/module-01/reviewsets.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: 'Review: Subsets and Operations on Sets'
+        path: src/lessons/module-01/reviewsets1.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: 'Review: Cardinality, Power Set'
+        path: src/lessons/module-01/reviewsets2.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: 'Review: Relation Properties'
+        path: src/lessons/module-01/reviewrelations.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: 'Review: Equivalence Relations'
+        path: src/lessons/module-01/reviewrelations1.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: LaTeX
+        path: src/lessons/module-01/latex.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: 'Week 1: Self-Guided Problem Set'
+        path: src/lessons/module-01/module1self.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-01-08
+        due: 2024-01-12
+        grade_weight: 1
+      - name: Homework Set 1
+        path: src/lessons/module-01/module1hw.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-01-08
+        due: 2024-01-12
+        grade_weight: 3.5
+  - name: 'Module 2: Sequences and Functions'
+    activities:
+      - name: Introduction
+        path: src/lessons/module-02.md
+        type: lesson
+        kind: PUBLICATION_REVIEWED
+        workload: 15
+        publish: 2024-01-08
+      - name: Sequence Definition
+        path: src/lessons/module-02/sequences.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: Arithmetic and Geometric Sequences
+        path: src/lessons/module-02/sequences1.md
+        type: lesson
+        kind: GENERAL
+        workload: 120
+        publish: 2024-01-08
+      - name: Special Sequences
+        path: src/lessons/module-02/sequences2.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: Convergence
+        path: src/lessons/module-02/sequences3.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: Function Definitions
+        path: src/lessons/module-02/functions.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: Types of Functions
+        path: src/lessons/module-02/functions1.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: 2024-01-08
+      - name: Countability
+        path: src/lessons/module-02/functions2.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: 2024-01-08
+      - name: Composition and Inverse
+        path: src/lessons/module-02/functions3.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-08
+      - name: Floors and Ceilings
+        path: src/lessons/module-02/floors.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: 2024-01-08
+      - name: 'Week 2: Self-Guided Problem Set'
+        path: src/lessons/module-02/module2self.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-01-08
+        due: 2024-01-15
+        grade_weight: 1
+      - name: Homework Set 2
+        path: src/lessons/module-02/module2hw.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-01-08
+        due: 2024-01-19
+        grade_weight: 3.5
+  - name: 'Module 3: Recurrence Relations'
+    activities:
+      - name: 'Module 3: Introduction'
+        path: src/lessons/module-03.md
+        type: lesson
+        kind: PUBLICATION_REVIEWED
+        workload: 15
+        publish: 2024-01-15
+      - name: Summation
+        path: src/lessons/module-03/summation.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: 2024-01-15
+      - name: Logarithms
+        path: src/lessons/module-03/logarithms.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: 2024-01-15
+      - name: Recurrence Relations - Definition
+        path: src/lessons/module-03/recurrence.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-15
+      - name: Solving Recurrence Relations
+        path: src/lessons/module-03/recurrence1.md
+        type: lesson
+        kind: GENERAL
+        workload: 75
+        publish: 2024-01-15
+      - name: Examples of Recurrence Relation Problems
+        path: src/lessons/module-03/recurrence2.md
+        type: lesson
+        kind: GENERAL
+        workload: 90
+        publish: 2024-01-15
+      - name: 'Week 3: Self-Guided Problem Set'
+        path: src/lessons/module-03/module3self.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-01-15
+        due: 2024-01-22
+        grade_weight: 1
+      - name: Homework Set 3
+        path: src/lessons/module-03/module3hw.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-01-15
+        due: 2024-01-26
+        grade_weight: 3.5
+  - name: 'Module 4: Proofs'
+    activities:
+      - name: 'Module 4: Introduction'
+        path: src/lessons/module-04.md
+        type: lesson
+        kind: PUBLICATION_REVIEWED
+        workload: 15
+        publish: 2024-01-22
+      - name: Structure of a Proof
+        path: src/lessons/module-04/proofmethods.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: 2024-01-22
+      - name: Proof Methods - Induction
+        path: src/lessons/module-04/proofmethods1.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-22
+      - name: Proof Methods - Direct, Contrapositive, and Contradiction
+        path: src/lessons/module-04/proofmethods2.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-22
+      - name: Proof Methods - Case Work and Simple Proofs
+        path: src/lessons/module-04/proofmethods3.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-22
+      - name: Proof Intuition
+        path: src/lessons/module-04/proofintuition.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-22
+      - name: Faulty Proofs
+        path: src/lessons/module-04/proofintuition1.md
+        type: lesson
+        kind: GENERAL
+        workload: 75
+        publish: 2024-01-22
+      - name: 'Week 4: Self-Guided Problem Set'
+        path: src/lessons/module-04/module4self.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-01-22
+        due: 2024-01-29
+        grade_weight: 1
+      - name: Midterm Exam
+        path: src/lessons/module-04/module4exam.md
+        type: assignment
+        kind: ASSIGNMENT_SUMMATIVE
+        workload: 480
+        publish: 2024-01-29
+        due: 2024-02-02
+        grade_weight: 20
+  - name: 'Module 5: Combinatorics'
+    activities:
+      - name: 'Module 5: Introduction'
+        path: src/lessons/module-05.md
+        type: lesson
+        kind: PUBLICATION_REVIEWED
+        workload: 15
+        publish: 2024-01-29
+      - name: Counting Principles
+        path: src/lessons/module-05/countingprinciples.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-29
+      - name: Inclusion-Exclusion
+        path: src/lessons/module-05/countingprinciples1.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-29
+      - name: Permutation and Combination
+        path: src/lessons/module-05/countingprinciples2.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-29
+      - name: Pascal's Triangle
+        path: src/lessons/module-05/countingprinciples3.md
+        type: lesson
+        kind: GENERAL
+        workload: 15
+        publish: 2024-01-29
+      - name: Casework and Complementary Counting
+        path: src/lessons/module-05/countingstrategies.md
+        type: lesson
+        kind: GENERAL
+        workload: 90
+        publish: 2024-01-29
+      - name: Overcounting and Pigeonhole Principle
+        path: src/lessons/module-05/countingstrategies1.md
+        type: lesson
+        kind: GENERAL
+        workload: 90
+        publish: 2024-01-29
+      - name: Stars and Bars
+        path: src/lessons/module-05/countingstrategies2.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-01-29
+      - name: The Binomial Theorem and Generating Functions
+        path: src/lessons/module-05/countingstrategies3.md
+        type: lesson
+        kind: GENERAL
+        workload: 90
+        publish: 2024-01-29
+      - name: 'Week 5: Self-Guided Problem Set'
+        path: src/lessons/module-05/module5self.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-01-29
+        due: 2024-02-05
+        grade_weight: 1
+      - name: Homework Set 5
+        path: src/lessons/module-05/module5hw.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-01-29
+        due: 2024-02-09
+        grade_weight: 3.5
+      - name: Project Topic Selection
+        path: src/lessons/module-05/selection.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 30
+        publish: 2024-01-29
+        due: 2024-02-04
+        grade_weight: 3
+  - name: 'Module 6: Combinatorial Proofs & Probability'
+    activities:
+      - name: 'Module 6: Introduction'
+        path: src/lessons/module-06.md
+        type: lesson
+        kind: PUBLICATION_REVIEWED
+        workload: 15
+        publish: 2024-02-06
+      - name: Combinatorial Proofs
+        path: src/lessons/module-06/countingproofs.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-06
+      - name: Block-Walking Proofs
+        path: src/lessons/module-06/countingproofs1.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-06
+      - name: Basic Probability Definition
+        path: src/lessons/module-06/basicprob.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-06
+      - name: Independence
+        path: src/lessons/module-06/independence.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-06
+      - name: Conditional Probability
+        path: src/lessons/module-06/conditional.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: 2024-02-06
+      - name: Bayes Theorem
+        path: src/lessons/module-06/bayes.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-06
+      - name: Continuous Probability Definition
+        path: src/lessons/module-06/continuous.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-07
+      - name: Expected Value
+        path: src/lessons/module-06/expectedvalue.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-07
+      - name: Probability Distributions
+        path: src/lessons/module-06/distributions.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-07
+      - name: 'Week 6: Self-Guided Problem Set'
+        path: src/lessons/module-06/module6self.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-02-07
+        due: 2024-02-12
+        grade_weight: 1
+      - name: Homework Set 6
+        path: src/lessons/module-06/module6hw.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-02-08
+        due: 2024-02-16
+        grade_weight: 3.5
+  - name: 'Module 7: Statistics & Number Theory'
+    activities:
+      - name: 'Module 7: Introduction'
+        path: src/lessons/module-07.md
+        type: lesson
+        kind: PUBLICATION_REVIEWED
+        workload: 15
+        publish: 2024-02-13
+      - name: Random Variables
+        path: src/lessons/module-07/rvs.md
+        type: lesson
+        kind: GENERAL
+        workload: 90
+        publish: 2024-02-13
+      - name: Statistics
+        path: src/lessons/module-07/statistics.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-13
+      - name: Divisibility
+        path: src/lessons/module-07/divisibility.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: 2024-02-13
+      - name: Primes & Prime Factorization
+        path: src/lessons/module-07/primes.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-13
+      - name: GCD/LCM
+        path: src/lessons/module-07/gcdlcm.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-13
+      - name: Divisibility Rules
+        path: src/lessons/module-07/divisibilityrules.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-13
+      - name: Different-Based Number Systems
+        path: src/lessons/module-07/basedsystems.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-12
+      - name: Divisibility Rules in Different-Based Number Systems
+        path: src/lessons/module-07/baseddivrules.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-13
+      - name: Diophantine Equations
+        path: src/lessons/module-07/diophantine.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: 2024-02-13
+      - name: 'Week 7: Self-Guided Problem Set'
+        path: src/lessons/module-07/module7self.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-02-13
+        due: 2024-02-19
+        grade_weight: 1
+      - name: Homework Set 7
+        path: src/lessons/module-07/module7hw.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-02-19
+        due: 2024-02-23
+        grade_weight: 3.5
+      - name: Project Proposal
+        path: src/lessons/module-07/proposal.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 180
+        publish: 2024-02-12
+        due: 2024-02-24
+        grade_weight: 6
+  - name: 'Module 8: Modular Arithmetic'
+    activities:
+      - name: 'Module 8: Introduction'
+        path: src/lessons/module-08.md
+        type: lesson
+        kind: PUBLICATION_REVIEWED
+        workload: 15
+        publish: 2024-02-20
+      - name: Mods
+        path: src/lessons/module-08/mods.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-20
+      - name: Modular Arithmetic
+        path: src/lessons/module-08/modarithmetic.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-20
+      - name: Modular Inverses
+        path: src/lessons/module-08/inverses.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: 2024-02-20
+      - name: Euclidean Algorithm
+        path: src/lessons/module-08/euclidean.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-20
+      - name: Extended Euclidean Algorithm
+        path: src/lessons/module-08/extended.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-20
+      - name: Linear Congruences, 1 System
+        path: src/lessons/module-08/linear1system.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-20
+      - name: Linear Congruences, Multiple Equivalences
+        path: src/lessons/module-08/linear2system.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-20
+      - name: Chinese Remainder Theorem
+        path: src/lessons/module-08/crt.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: 2024-02-20
+      - name: Other Useful Theorems
+        path: src/lessons/module-08/fermatwilson.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-20
+      - name: 'Week 8: Self-Guided Problem Set'
+        path: src/lessons/module-08/module8self.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-02-20
+        due: 2024-02-26
+        grade_weight: 1
+  - name: 'Module 9: Graph Theory'
+    activities:
+      - name: 'Module 9: Introduction'
+        path: src/lessons/module-09.md
+        type: lesson
+        kind: PUBLICATION_REVIEWED
+        workload: 15
+        publish: 2024-02-29
+      - name: Graph Definition
+        path: src/lessons/module-09/graphs.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-29
+      - name: Graph Properties
+        path: src/lessons/module-09/graphprop.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-29
+      - name: Traversing Graphs
+        path: src/lessons/module-09/traversing.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-29
+      - name: Graph Types
+        path: src/lessons/module-09/graphtypes.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-29
+      - name: Graph Representations
+        path: src/lessons/module-09/graphreps.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-02-29
+      - name: 'Week 9: Self-Guided Problem Set'
+        path: src/lessons/module-09/module9self.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 300
+        publish: 2024-02-29
+        due: 2024-03-04
+        grade_weight: 1
+      - name: Final Exam
+        path: src/lessons/module-09/module9exam.md
+        type: assignment
+        kind: ASSIGNMENT_SUMMATIVE
+        workload: 480
+        publish: 2024-02-29
+        due: 2024-03-08
+        grade_weight: 20
+  - name: 'Module 10: Proofs & Applications'
+    activities:
+      - name: 'Module 10: Introduction'
+        path: src/lessons/module-10.md
+        type: lesson
+        kind: PUBLICATION_REVIEWED
+        workload: 15
+        publish: 2024-03-04
+      - name: New Proof Methods
+        path: src/lessons/module-10/proofmethods.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-03-04
+      - name: Which Proof Type Should I Use?
+        path: src/lessons/module-10/proofdecisions.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-03-04
+      - name: Faulty Proofs
+        path: src/lessons/module-10/faultyproofs.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-03-04
+      - name: Computing Tools
+        path: src/lessons/module-10/computingtools.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-03-04
+      - name: Human Tools
+        path: src/lessons/module-10/humantools.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-03-04
+      - name: Cryptography
+        path: src/lessons/module-10/cryptography.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-03-04
+      - name: Statistics
+        path: src/lessons/module-10/statistics.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: 2024-03-04
+      - name: Final Project
+        path: src/lessons/module-10/module10project.md
+        type: assignment
+        kind: ASSIGNMENT_SUMMATIVE
+        workload: 480
+        publish: 2024-03-04
+        due: 2024-03-17
+        grade_weight: 21

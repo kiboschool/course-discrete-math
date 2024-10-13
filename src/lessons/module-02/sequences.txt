@@ -1,0 +1,304 @@
+# Sequences
+
+Sequences, like sets, are a mathematical structure. They allow us to talk about numbers in sequence, as the name implies.
+
+## Readings
+
+[Discrete Mathematics: An Open Introduction](https://discrete.openmathbooks.org/dmoi3/ch_sequences.html), [Chapter 2.1-2.2](https://discrete.openmathbooks.org/dmoi3/sec_seq_intro.html)
+
+Recommended: [How does it feel like to invent math?](https://www.youtube.com/watch?v=XFDM1ip5HdU) by [3Blue1Brown](https://www.youtube.com/@3blue1brown)
+
+## Sequence Definition
+
+Please read [Chapter 2.1](https://discrete.openmathbooks.org/dmoi3/sec_seq_intro.html)
+
+A **sequence** is an ordered list of objects. We'll only be discussing numerical sequences here. The sequence of natural numbers could be written:
+
+$$0, 1, 2, 3, ...$$
+
+In fact, we usually use the natural numbers as indices when writing out a general sequence. We do this because, in mathematical terms, a sequence is a function from the natural numbers to a value.
+
+$$a_0, a_1, a_2, a_3, ...$$
+
+[add function image]
+
+If we want to discuss the $k$th item in a sequence, we sometimes say $a_{k-1}$. 
+
+> Check your understanding: Why is the kth item $a_{k-1}$?
+
+Likewise, to refer to the whole sequence we put one representative in parentheses.
+
+$$(a_n)$$
+
+We only do this with variables. We can do this to refer to a series if we have defined what $a_n$ is, usually in terms of previous members of the sequence, or some other mathematical statement.
+
+For example, if we want the sequence of square numbers,
+
+$$a_n = n^2$$
+
+Or if we want a sequence where each number is two more than the previous number,
+
+$$a_n = a_{n-1} + 2$$
+
+Note that we should define $a_0$ for each sequence as well, so we can tell where it starts.
+
+> Check your understanding: if $a_0 = 0$ and $a_n = a_{n-1} + 2$, what types of numbers are in this sequence? There should be a good name that refers to the numbers listed here. What happens when $a_0 = 1$ instead?
+
+Since a sequence is a function, any function that has a domain of the natural numbers can be easily transformed into a sequence. For example,
+
+$$a_n = 2n + 3$$
+
+Would be a sequence where each value are integer values of the function $f(x) = 2x + 3$. Note that $a_0$ is defined already.
+
+> Check your understanding: what would $a_0$ be for this sequence?
+
+We can also define sequences in terms of other sequences. This is the idea behind partial sums.
+
+Pretend there is a Kibo course where students learn five new topics each week. The sequence of topics learned per day would simply be
+
+$$5, 5, 5, 5, ...$$
+
+However, what if we want to measure how much a student has learned so far?
+
+On the first day, they learn 5 topics.
+
+On the second day, they learn 5 more topics, for a total of $5 + 5 = 10$. This is a **partial sum** of our initial sequence. We add the first term to the second to get the second day total.
+
+And this continues, each day $5$ topics are added.
+
+$$5, 5+5, 5+5+5, 5+5+5+5, ...$$
+
+A **sequence of partial sums** is created by taking the sum of $a_0$ to $a_{n-1}$ for the $n$th term of the sequence.
+
+> Check your understanding: If our initial sequence is the odd numbers, what does the sequence of partial sums look like? Try finding a few terms, and see if you can spot the pattern.
+
+## Sequence Versus Series
+
+A **series** is defined as being the sum of each term in a sequence. For example, if we have the sequence of the positive integers, the series would be the sum of the posititive integers, which would be infinite. In general, many infinite series may end up resulting in an infinite answer, however, some have a solution! If we have a finite sequence, there should be a finite answer, though how easy this is to compute depends on the series.
+
+These terms are related, and it is easy to get them confused, especially since they are similar sounding words. However, a sequence should never contain a sum, and a series should always have some final answer when computed (which may be infinity).
+
+## Special Sequences
+Please read [Chapter 2.2](https://discrete.openmathbooks.org/dmoi3/sec_seq-arithgeom.html)
+
+There are two main types of sequences that have very nice ways to solve for the nth term, or for the sum of the sequence.
+
+### Arithmetic Sequences
+
+An **arithmetic sequence** is a sequence where each term is $k$ more than the previous term. This $k$ is known as the **common difference**. An arithmetic sequence can be defined by the initial term ($a_0$) and the common difference.
+
+Earlier, we defined a sequence
+
+$$a_n = a_{n-1} + 2$$
+
+Let's consider this sequence with $a_0 = 1$. The common difference will be $2$, since this is what we add to each term. This would give us the sequence of positive odd numbers! So, it turns out that odd numbers are an arithmetic sequence.
+
+> Check your understanding: How could we transform this series to instead get the sequence of positive even numbers?
+
+In general, an arithmetic sequence can be written:
+
+$$a_n = a_{n-1} + k$$
+
+However, there's an easier way of finding the $a_n$th term.
+
+Notice:
+
+$a_1 = a_0 + k$
+
+$a_2 = a_1 + k = (a_0 + k) + k = a_0 + 2k$
+
+$a_3 = a_2 + k = (a_0 + 2k) + k = a_0 + 3k$
+
+A pattern begins to appear. We should be able to reason through this as well. At the $a_n$ term, $k$ has been added $n$ times in total since the start. So,
+
+$$a_n = a_0 + nk$$
+
+Notice that this is not the $n$th term, but the $n+1$st term, since we start at $a_0$.
+
+If we wish to find the final solution to an arithmetic **series**, this is simple. Add the terms. However, a long series could prove a challenge.
+
+Let us start with the simple example of the sequence of positive integers up to $n$
+
+$$1, 2, 3, 4, ... , n-1, n$$
+
+If we start adding from the start of this sequence, there seems to be no pattern in the results, other than adding one more than one was added previously. This doesn't help us for a general case, like the one given above.
+
+However, addition is commutative, we can add these terms in any order.
+
+We can notice if we take terms from the front and back of the sequence, the sum is always $n+1$, so we rearrange the series to sum it:
+
+$1 + n$ + $2 + (n-1)$ + $3 + (n-2)$ + ...
+
+Our next task is to find how many $n + 1$ terms we have.
+
+If we're taking from both sides, when we stop, we'll be at the middle of the sequence. Half of the sequence will be before this point, and half will be after. We will have created a group once per term on the left hand side of this midpoint, so in total, there should be $\frac{n}{2}$ of these $n + 1$ terms.
+
+Therefore, our total should be $\frac{(n + 1)n}{2}$
+
+This gives us the **closed form** sum of a finite arithmetic series from $1$ to $n$ with common difference $1$. A **closed form** is just a single expression that is the solution to an expression with a much longer form. 
+
+$$1 + 2 + 3 + ... + (n-1) + n = \sum_{i=1}^n i = \frac{(n + 1)n}{2}$$
+
+Another way to view this process is to think of writing our series backwards:
+
+$$n + (n-1) + (n-2) + ... + 2 + 1$$
+
+This is still the same as our original, we just moved around additions again!
+
+If we add this series to our original series, matching the terms together, we find that same phenomenon of the $n+1$ sum.
+
+$$n + (n-1) + (n-2) + ... + 2 + 1$$
+$$+ 1, 2, 3, 4, ... , (n-1), n$$
+$$(n+1) + (n+1) + (n+1) + ... + (n+1) + (n+1)$$
+
+Here, it may be easier to see that there are $n$ of these $n+1$ terms, since there's one for every member of the sequence.
+
+However, we've added our sum to itself, so our answer is $2$ times more than what it should be, and we get the same closed form as before: $\frac{(n+1)n}{2}$
+
+> Think about it: How can we expand this closed form to any arithmetic series? Try finding the closed form of the sum of even numbers from $2$ to $n$. This has a common difference of two instead of one. What happens there? And what happens if you try to find the sum starting from some other value, like $4$ instead of $1$ in our original sequence with common difference $1$? If you get stuck, try computing a few of the series and seeing if you notice a pattern in the answers other than the common difference. Compare these answers to each other, and to the answers we would get for the series we solved above. Stick to positive integer terms in your experiments, we'll get to fractions and negative terms after the next topic.
+
+### Geometric Sequences
+
+A **Geometric sequence** is a sequence where each term is $k$ times the previous term. This $k$ is known as the common ratio. A Geometric sequence can be defined by the first term and the common ratio.
+
+Instead of adding $2$, if we start at $1$, and multiply by $2$ to form each term, we get the sequence of powers of $2$:
+
+$$1, 2, 4, 8, 16, 32, ... $$
+
+>Check your understanding: What happens if the starting number is changed to a $2$? A $3$? A $0$?
+
+
+
+In general, a geometric sequence can be written:
+
+$$a_n = ka_{n-1}$$
+
+With a defined $a_0$ term.
+
+To find the $n$th term, let's think about the sequence from the start.
+
+The first term will be $a_0$
+
+$a_1 = ka_0$
+
+$a_2 = ka_1 = k(ka_0) = k^2a_0$
+
+$a_3 = ka_2 = k(k^2a_0) = k^3a_0$
+
+For the $a_n$th term, we will have
+
+$a_n = k^na_0$
+
+Similar to the arithmetic sequence, this is the $n+1$st term in the sequence as a whole, since we start at $a_0$.
+
+If we wish to find the closed form of the geometric series, we need to be even more clever than before.
+
+Let's consider the powers of two up to $2^n$
+
+$1 + 2 + 4 + ... + 2^{n-1} + 2^n$
+
+We can't match terms from both ends this time, but we can do other things to the entire series if we undo the changes at the end.
+
+Consider the same series, multiplied by $2$
+
+$2 + 4 + 8 + ... + 2^n + 2^{n+1}$
+
+This series has almost all the same terms! Let's call our series $S$. This makes the second series we found $2S$.
+
+If we subtract our original series from the new series, all terms but two will cancel with each other! The last term of the second series and the first term of the first.
+
+$2S - S = 2^{n+1} - 1$
+
+If we want to know what $S$ is, we can solve algebraically
+
+$S(2-1) = 2^{n+1} - 1$
+
+$S = \frac{2^{n+1} - 1}{2 - 1}$
+
+This answer for the series of powers of two should make sense for those familiar with binary. Adding every power of two up to $2^n$ would represent a $1$ in each digit. If $1$ was added, it would turn into the next power of $2$, $2^{n+1}$. Therefore the value is $2^{n+1} - 1$.
+
+>Think about it: How would this change for powers of three? What would we multiply the series by in the first step? What is the general form for a series for $b$ to a power? What would change if the starting term was different?
+
+### Infinite Arithmetic and Geometric Sequences
+
+These have been closed forms for finite series. What if we want the sum of an infinite series? How can we tell if the sum should result in infinity or a finite value?
+
+Infinite arithmetic series always turn out to be infinite in their final sum. This should make sense, as there is no number we can add an infinite amount of times that wouldn't result in infinity, even if it was slow to reach infinity.
+
+For geometric series, we can multiply by a common ratio between $-1$ and $1$. This will ensure the terms shrink as the series continues.
+
+We can find the closed form in a similar way to the finite version. We'll have $S$ and $kS$, where $k$ is the common difference. Because there are infinite terms, now the "last" term of $kS$ will also cancel, since each term in $kS$ is also present in $S$. The first term, $a_0$, in $S$ will be the only term that is not present in the other series.
+
+$kS - S = -a_0$
+
+Multiplying by $-1$ on both sides,
+
+$S - kS = a_0$
+
+$S(1-k) = a_0$
+
+$S = \frac{a_0}{1-k}$
+
+This is the closed form for a geometric series.
+
+This should make sense from our finite closed form. The $2^{n+1}$ term grows because $2 > 1$. If this was a fraction, as $n$ increases, $k^n$ becomes smaller until it is practically $0$. Of the terms left, if the top and bottom of the fraction are multiplied by $-1$, we are left with the first term on top, and $1 - 2$ in the denominator, where $2$ is the common difference.
+
+## Oscillating Sequences
+
+It is frustrating that we cannot find a closed form for arithmetic series, and we can for geometric, but only under specific terms.
+
+An Oscillating sequence cycles between values. This means an infinite series is infinity, since it is either true that this cycle adds to a value, which will continue summing to infinity, or if the cycle sums to zero, then we'd have to know that the infinite series ends on the last term of the cycle, which we can't say.
+
+For finite sums, finding a closed form can be difficult, since it will depend what point of the cycle the sum ends. It takes more consideration than the arithmetic or geometric sums do, but it is possible.
+
+>Think about it: Start with the oscillating series that cycles over $1, 2, 3$. So this sequence is $1, 2, 3, 1, 2, 3, ...$. Find the sum for $1$ term, $2$ terms, all the way up to $12$ terms. Is there a pattern? How would you describe the sum for the $n$th term?
+
+## Telescoping Sums
+
+One last special series involves adding and subtracting terms. Specifically, a telescoping series is a series where these terms which are added and subtracted cancel each other out, except for the first and last term. For example, consider
+
+$1 + 2 - 2 + 3 - 3 + 4 - 4 + ... + 9 - 9 + 10$
+
+This makes closed forms very simple! The final answer for this series in particular will be $1 + 10 = 11$. If the series continues up to $n$, the resulting sum will be $n + 1$.
+
+While not mathematically interesting when viewed in this way, finding a telescoping sum in a problem can make computation simple.
+
+Sometimes telescoping sums do not completely cancel, but the terms left behind by the difference between terms can be solved using other methods, especially if the leftover amounts are a geometric or arithmetic series.
+
+>Think about it: Create a series that is a telescoping sum which simplifies to a geometric or arithmetic series. You may write terms as I've done above, simply deciding on the first $6$ to $8$ terms and the last term left behind.
+
+In general, it takes a sharp intuition to solve telescoping sum problems, as they are not always obvious.
+
+Consider the sum of numbers where the $n$th term has the value
+
+$\frac{1}{n(n+1)}$
+
+This can be re-written as a telescoping series!
+
+$\frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}$
+
+So the sum of this series will simply be $1 - \frac{1}{n+1}$, since all terms in the middle will cancel.
+
+## Sequence Rules: Convergence
+[How does it feel like to invent math?](https://www.youtube.com/watch?v=XFDM1ip5HdU)
+
+We've found that some series have closed forms for an infinite number of terms, and some don't. If an infinite series has one, non-infinite solution, it is called convergent. If it does not, it is called divergent.
+
+There are some rules and tests we can use to test if a series is convergent. These are beyond the scope of the course, but curious students may research this topic to see some interesting examples of convergent series.
+
+The series $1 - 1 + 1 - 1 + 1 + ...$ diverges, since it cannot be determined whether the value will be $1$ or $0$. The series $1, 2, 3, 4, ...$ also diverges since it is infinite. The series $1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + ...$ is called the Harmonic series, and is known to be divergent.
+
+However, $1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} - ...$ converges to a strange value, $\ln{(2)}$.
+
+It can be very hard to tell which series are convergent or divergent, but it is important to consider this before completing any math with series, as ignoring the convergence and divergence of series can have some interesting results.
+
+## Breaking Sequence Rules
+[How does it feel like to invent math?](https://www.youtube.com/watch?v=XFDM1ip5HdU)
+
+To come up with values that "make sense" in the normal idea of mathematics, we must stick to the rules of series. However, when we don't follow these rules, some interesting math appears.
+
+[embed video]
+
+This math is not the typical math most people encounter, however, it is a valid field with some interesting applications. Often, even the math that makes no sense at first becomes applicable to real life scenarios.
+
+In our exercises, we will stick to simpler series, but the ideas behind this different math are interesting enough to discuss.

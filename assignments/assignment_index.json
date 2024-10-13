@@ -1,0 +1,343 @@
+{
+  "name": "Discrete Math",
+  "id": "586373",
+  "code": "CSA001",
+  "assignments": [
+    {
+      "id": "4199774",
+      "name": "Final Exam Papers",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4199774",
+      "filename": "final_exam_papers.pdf"
+    },
+    {
+      "id": "3996065",
+      "name": "Final Project",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3996065",
+      "filename": "final_project.pdf"
+    },
+    {
+      "id": "3825246",
+      "name": "Homework Set 1",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3825246",
+      "filename": "homework_set_1.pdf"
+    },
+    {
+      "id": "3825879",
+      "name": "Homework Set 2",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3825879",
+      "filename": "homework_set_2.pdf"
+    },
+    {
+      "id": "3834264",
+      "name": "Homework Set 3",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3834264",
+      "filename": "homework_set_3.pdf"
+    },
+    {
+      "id": "3991583",
+      "name": "Homework Set 5",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3991583",
+      "filename": "homework_set_5.pdf"
+    },
+    {
+      "id": "4076598",
+      "name": "Homework Set 6",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4076598",
+      "filename": "homework_set_6.pdf"
+    },
+    {
+      "id": "4128636",
+      "name": "Homework Set 7",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4128636",
+      "filename": "homework_set_7.pdf"
+    },
+    {
+      "id": "4028832",
+      "name": "Midterm Exam Papers",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4028832",
+      "filename": "midterm_exam_papers.pdf"
+    },
+    {
+      "id": "4119455",
+      "name": "Midterm Exam Retake Papers",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4119455",
+      "filename": "midterm_exam_retake_papers.pdf"
+    },
+    {
+      "id": "3995935",
+      "name": "Project Proposal",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3995935",
+      "filename": "project_proposal.pdf"
+    },
+    {
+      "id": "3995819",
+      "name": "Project Topic Selection",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3995819",
+      "filename": "project_topic_selection.pdf"
+    },
+    {
+      "id": "3825788",
+      "name": "Week 1: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3825788",
+      "filename": "week_1__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "3825886",
+      "name": "Week 2: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3825886",
+      "filename": "week_2__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "3834265",
+      "name": "Week 3: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3834265",
+      "filename": "week_3__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "3835816",
+      "name": "Week 4: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3835816",
+      "filename": "week_4__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "3991368",
+      "name": "Week 5: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3991368",
+      "filename": "week_5__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "4071852",
+      "name": "Week 6: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4071852",
+      "filename": "week_6__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "4119826",
+      "name": "Week 7: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4119826",
+      "filename": "week_7__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "4146566",
+      "name": "Week 8: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4146566",
+      "filename": "week_8__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "4183168",
+      "name": "Week 9: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4183168",
+      "filename": "week_9__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "4199774",
+      "name": "Final Exam Papers",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4199774",
+      "filename": "final_exam_papers.pdf"
+    },
+    {
+      "id": "3996065",
+      "name": "Final Project",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3996065",
+      "filename": "final_project.pdf"
+    },
+    {
+      "id": "3825246",
+      "name": "Homework Set 1",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3825246",
+      "filename": "homework_set_1.pdf"
+    },
+    {
+      "id": "3825879",
+      "name": "Homework Set 2",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3825879",
+      "filename": "homework_set_2.pdf"
+    },
+    {
+      "id": "3834264",
+      "name": "Homework Set 3",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3834264",
+      "filename": "homework_set_3.pdf"
+    },
+    {
+      "id": "3991583",
+      "name": "Homework Set 5",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3991583",
+      "filename": "homework_set_5.pdf"
+    },
+    {
+      "id": "4076598",
+      "name": "Homework Set 6",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4076598",
+      "filename": "homework_set_6.pdf"
+    },
+    {
+      "id": "4128636",
+      "name": "Homework Set 7",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4128636",
+      "filename": "homework_set_7.pdf"
+    },
+    {
+      "id": "4028832",
+      "name": "Midterm Exam Papers",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4028832",
+      "filename": "midterm_exam_papers.pdf"
+    },
+    {
+      "id": "4119455",
+      "name": "Midterm Exam Retake Papers",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4119455",
+      "filename": "midterm_exam_retake_papers.pdf"
+    },
+    {
+      "id": "3995935",
+      "name": "Project Proposal",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3995935",
+      "filename": "project_proposal.pdf"
+    },
+    {
+      "id": "3995819",
+      "name": "Project Topic Selection",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3995819",
+      "filename": "project_topic_selection.pdf"
+    },
+    {
+      "id": "3825788",
+      "name": "Week 1: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3825788",
+      "filename": "week_1__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "3825886",
+      "name": "Week 2: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3825886",
+      "filename": "week_2__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "3834265",
+      "name": "Week 3: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3834265",
+      "filename": "week_3__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "3835816",
+      "name": "Week 4: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3835816",
+      "filename": "week_4__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "3991368",
+      "name": "Week 5: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/3991368",
+      "filename": "week_5__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "4071852",
+      "name": "Week 6: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4071852",
+      "filename": "week_6__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "4119826",
+      "name": "Week 7: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4119826",
+      "filename": "week_7__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "4146566",
+      "name": "Week 8: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4146566",
+      "filename": "week_8__self-guided_problem_set.pdf"
+    },
+    {
+      "id": "4183168",
+      "name": "Week 9: Self-Guided Problem Set",
+      "course_id": "586373",
+      "course_code": "CSA001",
+      "href": "https://gradescope.com/courses/586373/assignments/4183168",
+      "filename": "week_9__self-guided_problem_set.pdf"
+    }
+  ]
+}
